@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brain Training Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="game-container">
+        <div class="header">
+            <h1>Brain Training Game 🧠</h1>
+            <div class="iq-meter" style="--iq-percent: 50%">
+                <div class="iq-score">100</div>
+            </div>
+        </div>
+
+        <div class="score-board">
+            <div>Level: <span id="level">1</span></div>
+            <div>Score: <span id="score">0</span></div>
+        </div>
+
+        <!-- Math Challenge -->
+        <div class="game-section active-game" id="mathGame">
+            <h2>Math Challenge</h2>
+            <div class="math-problem" id="mathProblem"></div>
+            <input type="number" id="mathAnswer" placeholder="Enter answer">
+            <div class="timer">Time Left: <span id="mathTimer">20</span>s</div>
+        </div>
+
+        <div class="controls">
+            <button id="startBtn">Start Game</button>
+            <button id="resetBtn">Reset</button>
+        </div>
+    </div>
+
+    <script src="game.js"></script>
+</body>
+</html>
